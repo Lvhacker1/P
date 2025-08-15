@@ -1,0 +1,12 @@
+
+
+.header {
+    color: aliceblue;
+    background: #d5cdcd;
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar {
+    color: blue;
+}
