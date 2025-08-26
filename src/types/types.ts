@@ -14,3 +14,7 @@ export interface HeaderProps {
     links: NavLink[];
     onMenuClick?: () => void;
 }
+
+export interface PageTitleProps {
+    title: string;
+}
