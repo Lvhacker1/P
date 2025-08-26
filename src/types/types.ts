@@ -1,6 +1,11 @@
 export interface NavLink {
-    label: string;
-    href: string;
+  name: string;
+  path: string;
+}
+
+export interface NavLinksProps {
+  link: NavLink;
+  onClick?: () => void;
 }
 
 export interface HeaderProps {

@@ -1,13 +1,13 @@
 import Link from "next/link"
-import { NavLink } from "@/types/types"
+import { NavLinksProps } from "@/types/types"
 
-
-const NavLinks = ({link} :{link: NavLink}) => {
-    return (
-        <Link href={link.href}>
-            {link.label}
-        </Link>
-    )
+const NavLinks = ({ link, onClick }: NavLinksProps) => {
+  return (
+    <Link href={link.path} onClick={onClick} 
+    className="text-black hover:text-blue-600" >
+      {link.name}
+    </Link>
+  )
 }
 
 export default NavLinks
