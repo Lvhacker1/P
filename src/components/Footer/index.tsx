@@ -1,11 +1,18 @@
+'use client'
+import { navLinks } from "@/data/data";
 import { FooterProps, NavLink } from "@/types/types";
+import Link from "next/link";
 
 const Footer = () => {
     return (
         <footer>
-            <div>
-
-            </div>
+            <nav>
+                {navLinks.map((link: NavLink) => (
+                    <Link key={link.path} href={link.name}>
+                        {link.name}
+                    </Link>
+                ))}
+            </nav>
             <div>
 
             </div>

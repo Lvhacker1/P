@@ -1,6 +1,5 @@
 import {render, screen, fireEvent } from '@testing-library/react';
 import Header from '@/components/Header';
-import { navLinks } from '@/data/data'; 
 import { NavLink } from '@/types/types';
 
 
