@@ -18,3 +18,8 @@ export interface HeaderProps {
 export interface PageTitleProps {
     title: string;
 }
+
+export interface FooterProps {
+    text: string;
+    links: NavLink[];
+}
