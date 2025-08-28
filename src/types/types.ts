@@ -19,7 +19,8 @@ export interface PageTitleProps {
     title: string;
 }
 
-export interface FooterProps {
-    text: string;
-    links: NavLink[];
+export interface SocialLinks {
+    name: string;
+    url: string;
+    icon: string;
 }

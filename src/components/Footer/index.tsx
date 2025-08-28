@@ -1,6 +1,6 @@
 'use client'
 import { navLinks } from "@/data/data";
-import { FooterProps, NavLink } from "@/types/types";
+import { SocialLinks, NavLink } from "@/types/types";
 import Link from "next/link";
 
 const Footer = () => {
