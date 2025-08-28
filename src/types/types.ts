@@ -24,3 +24,9 @@ export interface SocialLinks {
     url: string;
     icon: string;
 }
+
+export interface CopyrightProps {
+    name: string;
+    text: string;
+    year: number;
+}

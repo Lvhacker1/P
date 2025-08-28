@@ -1,6 +1,6 @@
 'use client'
-import { navLinks, socialLinks } from "@/data/data";
-import { SocialLinks, NavLink } from "@/types/types";
+import { navLinks, socialLinks, copyright } from "@/data/data";
+import { SocialLinks, NavLink, CopyrightProps } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ const Footer = () => {
                 ))}
             </div>
             <div>
-                <p></p>
+                <p>© {copyright.year} | {copyright.name} | {copyright.text}</p>
             </div>
 
         </footer>
