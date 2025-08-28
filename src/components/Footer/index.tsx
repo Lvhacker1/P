@@ -1,5 +1,5 @@
 'use client'
-import { navLinks } from "@/data/data";
+import { navLinks, socialLinks } from "@/data/data";
 import { SocialLinks, NavLink } from "@/types/types";
 import Link from "next/link";
 
@@ -14,7 +14,11 @@ const Footer = () => {
                 ))}
             </nav>
             <div>
-
+                {socialLinks.map((socialLink: SocialLinks) => (
+                    <a key={socialLink.name} href={socialLink.url} target="_blank" rel="noopener noreferrer">
+                        {socialLink.name}
+                    </a>
+                ))}
             </div>
             <div>
                 <p></p>
