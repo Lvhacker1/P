@@ -1,6 +1,7 @@
 'use client'
 import { navLinks, socialLinks } from "@/data/data";
 import { SocialLinks, NavLink } from "@/types/types";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,6 +18,7 @@ const Footer = () => {
                 {socialLinks.map((socialLink: SocialLinks) => (
                     <a key={socialLink.name} href={socialLink.url} target="_blank" rel="noopener noreferrer">
                         {socialLink.name}
+                        <Image src={socialLink.icon} alt={socialLink.name} width={24} height={24} />
                     </a>
                 ))}
             </div>
