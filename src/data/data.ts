@@ -8,6 +8,6 @@ export const navLinks: NavLink[] = [
 ];
 
 export const socialLinks: SocialLinks[] = [
-    {name: "GitHub", url: "", icon: "github"},
-    {name: "LinkedIn", url: "", icon: "linkedin"}
+    {name: "GitHub", url: "https://github.com/Lvhacker1", icon: "github"},
+    {name: "LinkedIn", url: "https://www.linkedin.com/in/lava-sharif-24a400323/", icon: "linkedin"}
 ];
